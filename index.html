@@ -297,27 +297,57 @@
 </div>
 </section>
 <!-- About Section -->
-<section class="w-full py-section-gap bg-surface-container-low" id="about">
-<div class="max-w-[800px] mx-auto px-margin-mobile md:px-margin-desktop text-center flex flex-col items-center">
-<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-stack-sm">A Profissional</span>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background mb-stack-md">
-                        Compromisso inabalável com a <span class="italic text-primary">sua causa.</span>
-</h2>
-<div class="w-12 h-[1px] bg-primary mb-stack-md"></div>
-<div class="font-body-lg text-body-lg text-on-surface-variant space-y-6">
-<p>
-                            A advocacia, para Dra. Alessandra Mendes, transcende a mera aplicação da lei; é um ofício refinado que exige sensibilidade, combatividade e um profundo entendimento do contexto humano e negocial de cada cliente.
-                        </p>
-<p>
-                            Com uma trajetória marcada pela excelência, nosso escritório oferece um atendimento altamente personalizado. Acreditamos que a verdadeira justiça é alcançada quando a técnica jurídica impecável encontra um suporte atencioso e humano.
-                        </p>
-</div>
-<div class="mt-stack-lg flex flex-wrap justify-center gap-4">
-<span class="bg-surface border border-outline-variant/50 px-4 py-2 font-label-caps text-label-caps uppercase text-on-surface rounded-DEFAULT">Atendimento Humanizado</span>
-<span class="bg-surface border border-outline-variant/50 px-4 py-2 font-label-caps text-label-caps uppercase text-on-surface rounded-DEFAULT">Sigilo Absoluto</span>
-<span class="bg-surface border border-outline-variant/50 px-4 py-2 font-label-caps text-label-caps uppercase text-on-surface rounded-DEFAULT">Estratégia Focada</span>
-</div>
-</div>
+<section class="relative w-full py-24 bg-surface-container-low overflow-hidden" id="about">
+    <!-- Decorative Watermark -->
+    <div class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/4 text-[250px] md:text-[350px] font-display-lg text-primary/5 select-none pointer-events-none italic font-bold">
+        A.M.
+    </div>
+
+    <div class="relative z-10 max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Side: Title & Badges -->
+        <div class="lg:col-span-5 flex flex-col justify-center border-l-4 border-primary pl-8">
+            <span class="font-label-caps text-sm uppercase tracking-[0.3em] text-primary mb-4 font-bold">A Profissional</span>
+            <h2 class="text-4xl md:text-5xl lg:text-6xl text-on-background font-serif leading-tight mb-8">
+                Compromisso inabalável com a <br/><span class="italic text-primary font-light">sua causa.</span>
+            </h2>
+            
+            <div class="flex flex-col gap-4 mt-4">
+                <div class="flex items-center gap-4 group">
+                    <span class="w-8 h-[1px] bg-primary transition-all duration-300 group-hover:w-16"></span>
+                    <span class="font-label-caps text-xs tracking-widest text-on-surface-variant uppercase">Atendimento Humanizado</span>
+                </div>
+                <div class="flex items-center gap-4 group">
+                    <span class="w-8 h-[1px] bg-primary transition-all duration-300 group-hover:w-16"></span>
+                    <span class="font-label-caps text-xs tracking-widest text-on-surface-variant uppercase">Sigilo Absoluto</span>
+                </div>
+                <div class="flex items-center gap-4 group">
+                    <span class="w-8 h-[1px] bg-primary transition-all duration-300 group-hover:w-16"></span>
+                    <span class="font-label-caps text-xs tracking-widest text-on-surface-variant uppercase">Estratégia Focada</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Content -->
+        <div class="lg:col-span-7 bg-surface/80 backdrop-blur-md p-8 md:p-12 shadow-2xl rounded-2xl border border-outline-variant/30 relative">
+            <!-- Decorative quote icon -->
+            <span class="absolute -top-6 -left-6 text-6xl text-primary/40 material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+            
+            <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed mb-6 font-light">
+                <span class="text-6xl text-primary font-serif float-left mr-4 leading-none mt-2">A</span> advocacia, para Dra. Alessandra Mendes, transcende a mera aplicação da lei; é um ofício refinado que exige <strong class="font-semibold text-on-background">sensibilidade, combatividade e um profundo entendimento</strong> do contexto humano e negocial de cada cliente.
+            </p>
+            <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed font-light">
+                Com uma trajetória marcada pela excelência, nosso escritório oferece um atendimento altamente personalizado. Acreditamos que a verdadeira justiça é alcançada quando a técnica jurídica impecável encontra um suporte atencioso e humano.
+            </p>
+            
+            <!-- Signature -->
+            <div class="mt-10 flex items-center justify-end">
+                <div class="text-right">
+                    <p class="text-2xl font-serif italic text-primary">Dra. Alessandra Mendes</p>
+                    <p class="text-xs uppercase tracking-[0.2em] text-on-surface-variant mt-2 font-bold">OAB/RJ</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- Divider -->
 <div class="w-full h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
@@ -327,10 +357,15 @@
 <a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity" href="#">
                 ALESSANDRA MENDES
             </a>
-<div class="flex flex-wrap justify-center gap-6 mt-stack-sm">
+<div class="flex flex-wrap justify-center items-center gap-6 mt-stack-sm">
 <a class="font-label-caps text-label-caps uppercase text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors ease-in-out duration-300" href="#">Política de Privacidade</a>
 <a class="font-label-caps text-label-caps uppercase text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors ease-in-out duration-300" href="#">Termos de Serviço</a>
 <a class="font-label-caps text-label-caps uppercase text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors ease-in-out duration-300" href="#">Aviso Legal</a>
+<a href="https://www.instagram.com/dra_alessandramendes/" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-colors ease-in-out duration-300 flex items-center justify-center ml-2" aria-label="Instagram">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.036 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+    </svg>
+</a>
 </div>
 <div class="font-body-md text-body-md text-on-surface-variant mt-stack-md opacity-70">
                 © 2024 ALESSANDRA MENDES ADVOCACIA. TODOS OS DIREITOS RESERVADOS.
