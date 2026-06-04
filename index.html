@@ -130,6 +130,26 @@
             display: flex;
             min-width: 100%;
         }
+        @keyframes shine-left-right {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+        .shine-text {
+            background: linear-gradient(120deg, #75593e 40%, #ffdcbd 50%, #75593e 60%);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: shine-left-right 3.5s linear infinite;
+            display: inline-block;
+        }
+        .dark .shine-text {
+            background: linear-gradient(120deg, #e4c09e 40%, #ffffff 50%, #e4c09e 60%);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
     </style>
 </head>
 <body class="bg-background text-on-background antialiased selection:bg-primary selection:text-on-primary">
@@ -168,11 +188,14 @@
 <div class="relative z-10 w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 <div class="text-left flex flex-col items-start">
 <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-stack-lg border border-primary/20 px-4 py-1 rounded-full bg-surface/50 backdrop-blur-sm">Advocacia de Excelência</span>
-<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-display-lg md:text-display-lg text-on-background mb-stack-md max-w-4xl">
-                Justiça com <span class="text-primary italic">Elegância</span> e Excelência
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background mb-stack-md max-w-4xl leading-tight">
+                Advogada Referência em diversas áreas do direito:<br/>
+                <span class="shine-text block mt-4 text-[28px] md:text-5xl italic font-bold tracking-wide">
+                    Artístico, Criminal, Cível e Empresarial
+                </span>
             </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-lg">
-                Especialista em Direito Artístico, Criminal, Cível e Empresarial. Protegendo seus interesses com rigor técnico e atendimento humanizado.
+                Protegendo seus interesses com rigor técnico e atendimento humanizado.
             </p>
 <a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-caps text-label-caps uppercase px-8 py-4 rounded-DEFAULT hover:bg-primary/90 transition-all duration-300 tracking-wider" href="#consultation">
                 Agende uma Consulta
