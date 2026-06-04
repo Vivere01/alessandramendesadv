@@ -129,6 +129,11 @@
         .marquee-content {
             display: flex;
             min-width: 100%;
+            animation: marquee-scroll 12s linear infinite;
+        }
+        @keyframes marquee-scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
         @keyframes shine-left-right {
             0% { background-position: -200% center; }
@@ -210,7 +215,8 @@
 <!-- Specialties Marquee -->
 <section class="w-full py-stack-lg bg-surface-container-lowest border-b border-outline-variant/30 overflow-hidden" id="specialties">
 <div class="marquee-container w-full">
-<div class="marquee-content animate-marquee items-center gap-8 font-label-caps text-label-caps text-on-surface-variant tracking-[0.2em] uppercase">
+<div class="marquee-content items-center gap-8 font-label-caps text-label-caps text-on-surface-variant tracking-[0.2em] uppercase">
+<!-- Copy 1 -->
 <span class="flex items-center gap-8 whitespace-nowrap">
                     DIREITO ARTÍSTICO <span class="w-2 h-2 rounded-full bg-primary/40"></span>
                     DIREITO CRIMINAL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
@@ -220,7 +226,27 @@
                     DEFESA DO CONSUMIDOR <span class="w-2 h-2 rounded-full bg-primary/40"></span>
                     CONSULTORIA JURÍDICA <span class="w-2 h-2 rounded-full bg-primary/40"></span>
 </span>
-<!-- Duplicate for seamless loop -->
+<!-- Copy 2 -->
+<span class="flex items-center gap-8 whitespace-nowrap ml-8">
+                    DIREITO ARTÍSTICO <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DIREITO CRIMINAL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DIREITO CÍVEL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DIREITO EMPRESARIAL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    PROPRIEDADE INTELECTUAL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DEFESA DO CONSUMIDOR <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    CONSULTORIA JURÍDICA <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+</span>
+<!-- Copy 3 -->
+<span class="flex items-center gap-8 whitespace-nowrap ml-8">
+                    DIREITO ARTÍSTICO <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DIREITO CRIMINAL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DIREITO CÍVEL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DIREITO EMPRESARIAL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    PROPRIEDADE INTELECTUAL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DEFESA DO CONSUMIDOR <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    CONSULTORIA JURÍDICA <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+</span>
+<!-- Copy 4 -->
 <span class="flex items-center gap-8 whitespace-nowrap ml-8">
                     DIREITO ARTÍSTICO <span class="w-2 h-2 rounded-full bg-primary/40"></span>
                     DIREITO CRIMINAL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
