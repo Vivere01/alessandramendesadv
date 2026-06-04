@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dra. Alessandra Mendes - Advocacia de Excelência</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Guidelines -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#34302c",
+                        "on-surface-variant": "#4f453d",
+                        "on-secondary-fixed": "#241a0e",
+                        "on-primary-fixed-variant": "#5b4228",
+                        "on-secondary-fixed-variant": "#524436",
+                        "primary-fixed-dim": "#e4c09e",
+                        "on-tertiary-container": "#3e3e3c",
+                        "surface-container-low": "#fbf2ed",
+                        "surface-container-high": "#efe6e2",
+                        "surface": "#fff8f5",
+                        "surface-bright": "#fff8f5",
+                        "tertiary-fixed-dim": "#c8c6c2",
+                        "outline": "#80756c",
+                        "on-tertiary-fixed-variant": "#474744",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#e5e2de",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#75593e",
+                        "secondary-container": "#f4dfcb",
+                        "primary-fixed": "#ffdcbd",
+                        "surface-dim": "#e1d8d4",
+                        "surface-container": "#f5ece7",
+                        "on-primary-fixed": "#2a1703",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#e4c09e",
+                        "surface-tint": "#75593e",
+                        "on-surface": "#1e1b18",
+                        "outline-variant": "#d2c4b9",
+                        "inverse-on-surface": "#f8efea",
+                        "tertiary": "#5f5e5b",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#1c1c1a",
+                        "on-error": "#ffffff",
+                        "secondary": "#6b5c4c",
+                        "background": "#fff8f5",
+                        "secondary-fixed": "#f4dfcb",
+                        "surface-variant": "#e9e1dc",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1e1b18",
+                        "on-primary-container": "#513920",
+                        "primary-container": "#c5a383",
+                        "surface-container-highest": "#e9e1dc",
+                        "secondary-fixed-dim": "#d7c3b0",
+                        "tertiary-container": "#aba9a6",
+                        "on-secondary-container": "#716252",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "24px",
+                        "margin-desktop": "80px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "label-caps": ["Manrope"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Manrope"],
+                        "headline-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "600" }]
+                    },
+                    "animation": {
+                        'marquee': 'marquee 40s linear infinite',
+                    },
+                    "keyframes": {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .marquee-container {
+            display: flex;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .marquee-content {
+            display: flex;
+            min-width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md docked full-width top-0 sticky border-b border-outline-variant/30 z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto h-20">
+<!-- Brand -->
+<a class="flex items-center gap-4 hover:opacity-80 transition-all duration-300" href="#">
+<img alt="ALESSANDRA MENDES Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwtM1YYnhLsSdiczdhH8GESRgggvEgjy8Rg8KHZZdcvCYlLXiLgZju51yi2kH_0P6QO3oY4pVpz0dMFjifxhtaSNhvG2ukodagheDnxGh8PTHj1W6NjmzWBLhVbNe951xMk8r5u5T10EM4qgiXTrAPhaavjquMCPDIL_q2QajsmTeRFwYybvSTDLk9F1E4pByVTSDlYpBQ8bGYSm1uhYg8-JeuOc2PL7Y7Z3UmuM4UdJ1nF1GZtaoP7qjcF7G6IBpngFJ7wFT0xRM"/>
+</a>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex items-center gap-8">
+<li><a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary transition-colors font-label-caps text-label-caps uppercase" href="#about">About</a></li>
+<li><a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1 font-label-caps text-label-caps uppercase active:scale-95 transition-transform duration-200" href="#specialties">Specialties</a></li>
+<li><a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary transition-colors font-label-caps text-label-caps uppercase" href="#practice-areas">Practice Areas</a></li>
+<li><a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary transition-colors font-label-caps text-label-caps uppercase" href="#contact">Contact</a></li>
+</ul>
+<!-- CTA & Mobile Toggle -->
+<div class="flex items-center gap-4">
+<a class="hidden md:inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase px-6 py-3 rounded-DEFAULT hover:opacity-80 transition-all duration-300" href="#consultation">CONSULTATION</a>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative w-full min-h-[80vh] flex items-center justify-center overflow-hidden border-b border-outline-variant/30">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Hero Background Art" class="w-full h-full object-cover opacity-30 object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE20N0GD1GBAM8-ER6H1oNgxcRm3W2IKSpfWtczAk2672cTGRrCTq0WNXBULLV0gqa9ZS5aCZRLTFwOsSvaz5YeIHeEttih4RX5rSiM5Yzzfmp37FiM_u2cOqqKLO2j4KAB0m3FbAU88TPwN6ihw77Qxe109kE2M3DlNPFnv3uEJv02j7UtNfx-jPcyAimssCZbCqvcn8aQXWha0Dp65y7RjIABC4CfF5u_Ieq2TPUjX5nWhvNtCD0IQ3kz0PglUdYI0GfXDXVh8Y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop text-center flex flex-col items-center py-section-gap">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-stack-lg border border-primary/20 px-4 py-1 rounded-full bg-surface/50 backdrop-blur-sm">Advocacia de Excelência</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-display-lg md:text-display-lg text-on-background mb-stack-md max-w-4xl">
+                Justiça com <span class="text-primary italic">Elegância</span> e Excelência
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-2xl">
+                Especialista em Direito Artístico, Criminal, Cível e Empresarial. Protegendo seus interesses com rigor técnico e atendimento humanizado.
+            </p>
+<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-caps text-label-caps uppercase px-8 py-4 rounded-DEFAULT hover:bg-primary/90 transition-all duration-300 tracking-wider" href="#consultation">
+                Agende uma Consulta
+            </a>
+</div>
+</section>
+<!-- Specialties Marquee -->
+<section class="w-full py-stack-lg bg-surface-container-lowest border-b border-outline-variant/30 overflow-hidden" id="specialties">
+<div class="marquee-container w-full">
+<div class="marquee-content animate-marquee items-center gap-8 font-label-caps text-label-caps text-on-surface-variant tracking-[0.2em] uppercase">
+<span class="flex items-center gap-8 whitespace-nowrap">
+                    DIREITO ARTÍSTICO <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DIREITO CRIMINAL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DIREITO CÍVEL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DIREITO EMPRESARIAL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    PROPRIEDADE INTELECTUAL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DEFESA DO CONSUMIDOR <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    CONSULTORIA JURÍDICA <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+</span>
+<!-- Duplicate for seamless loop -->
+<span class="flex items-center gap-8 whitespace-nowrap ml-8">
+                    DIREITO ARTÍSTICO <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DIREITO CRIMINAL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DIREITO CÍVEL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DIREITO EMPRESARIAL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    PROPRIEDADE INTELECTUAL <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    DEFESA DO CONSUMIDOR <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+                    CONSULTORIA JURÍDICA <span class="w-2 h-2 rounded-full bg-primary/40"></span>
+</span>
+</div>
+</div>
+</section>
+<!-- Practice Areas (Bento Grid Style) -->
+<section class="w-full py-section-gap bg-background" id="practice-areas">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-stack-lg text-center md:text-left">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background mb-stack-sm">Áreas de Atuação</h2>
+<div class="w-12 h-[1px] bg-primary mx-auto md:mx-0"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Card 1 -->
+<div class="group relative bg-surface-container-lowest border border-outline-variant/50 p-8 rounded-DEFAULT hover:border-primary/50 transition-colors duration-500 overflow-hidden">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity duration-500 text-primary">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">palette</span>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-4xl mb-stack-md">music_note</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-stack-sm">Direito Artístico</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Proteção robusta para criatividade e propriedade intelectual. Assessoria contratual para artistas, produtores e selos musicais.
+                        </p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative bg-surface-container-lowest border border-outline-variant/50 p-8 rounded-DEFAULT hover:border-primary/50 transition-colors duration-500 overflow-hidden">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity duration-500 text-primary">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">gavel</span>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-4xl mb-stack-md">gavel</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-stack-sm">Direito Criminal</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Defesa humanizada e segurança jurídica estratégica. Atuação combativa e discreta na preservação dos seus direitos.
+                        </p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative bg-surface-container-lowest border border-outline-variant/50 p-8 rounded-DEFAULT hover:border-primary/50 transition-colors duration-500 overflow-hidden">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity duration-500 text-primary">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">balance</span>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-4xl mb-stack-md">handshake</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-stack-sm">Direito Cível</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Resolução de conflitos patrimoniais, responsabilidade civil e direito de família com foco na mitigação de desgastes.
+                        </p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative bg-surface-container-lowest border border-outline-variant/50 p-8 rounded-DEFAULT hover:border-primary/50 transition-colors duration-500 overflow-hidden">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity duration-500 text-primary">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">domain</span>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-4xl mb-stack-md">domain</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-stack-sm">Direito Empresarial</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Suporte jurídico estratégico para crescimento sustentável de negócios. Governança, compliance e estruturação societária.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="w-full py-section-gap bg-surface-container-low" id="about">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Image Col -->
+<div class="lg:col-span-5 relative">
+<div class="absolute inset-0 bg-primary-container/20 translate-x-4 translate-y-4 rounded-DEFAULT"></div>
+<img alt="Dra. Alessandra Mendes Portrait" class="relative z-10 w-full h-auto object-cover rounded-DEFAULT shadow-sm grayscale-[20%] sepia-[10%] border border-outline-variant/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNUzcrMUxKk5UL_dU7Q3UOwf0YLKOrKULuf17z_gaj5BOZLd7Au8_WkEIoZLefAmeSo7qi-_z_jwyO0_-OetWfdswbfOaROJvRKxkp7h-91VmQWsGH6B1-Hvuz3rChIcQB6_U22Hm6vIhLKuurwvtKw2pVbfZ1j9DrJaQ0lKHhu_JLiyAXwIhjeC28dx_f5BDtf3v4oUKqvhpODI7XJK8jwbyEyArZ_oLj7HvEg5G-iqOvutbAOCyid-J9clDJhbzCJ0yp-XHz2Ww"/>
+</div>
+<!-- Text Col -->
+<div class="lg:col-span-7 lg:pl-12 flex flex-col justify-center mt-stack-lg lg:mt-0">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-stack-sm">A Profissional</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background mb-stack-md">
+                        Compromisso inabalável com a <span class="italic text-primary">sua causa.</span>
+</h2>
+<div class="w-12 h-[1px] bg-primary mb-stack-md"></div>
+<div class="font-body-lg text-body-lg text-on-surface-variant space-y-6">
+<p>
+                            A advocacia, para Dra. Alessandra Mendes, transcende a mera aplicação da lei; é um ofício refinado que exige sensibilidade, combatividade e um profundo entendimento do contexto humano e negocial de cada cliente.
+                        </p>
+<p>
+                            Com uma trajetória marcada pela excelência, nosso escritório oferece um atendimento altamente personalizado. Acreditamos que a verdadeira justiça é alcançada quando a técnica jurídica impecável encontra um suporte atencioso e humano.
+                        </p>
+</div>
+<div class="mt-stack-lg flex flex-wrap gap-4">
+<span class="bg-surface border border-outline-variant/50 px-4 py-2 font-label-caps text-label-caps uppercase text-on-surface rounded-DEFAULT">Atendimento Humanizado</span>
+<span class="bg-surface border border-outline-variant/50 px-4 py-2 font-label-caps text-label-caps uppercase text-on-surface rounded-DEFAULT">Sigilo Absoluto</span>
+<span class="bg-surface border border-outline-variant/50 px-4 py-2 font-label-caps text-label-caps uppercase text-on-surface rounded-DEFAULT">Estratégia Focada</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Divider -->
+<div class="w-full h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+<!-- Footer Component -->
+<footer class="bg-surface-container-lowest dark:bg-inverse-surface full-width border-t border-primary/20">
+<div class="flex flex-col items-center w-full py-stack-lg px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto gap-stack-md text-center">
+<a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity" href="#">
+                ALESSANDRA MENDES
+            </a>
+<div class="flex flex-wrap justify-center gap-6 mt-stack-sm">
+<a class="font-label-caps text-label-caps uppercase text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors ease-in-out duration-300" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps uppercase text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors ease-in-out duration-300" href="#">Terms of Service</a>
+<a class="font-label-caps text-label-caps uppercase text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors ease-in-out duration-300" href="#">Legal Notice</a>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant mt-stack-md opacity-70">
+                © 2024 ALESSANDRA MENDES AD ADVOCACY. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/5521974030956" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:bg-[#128C7E] hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center" aria-label="Fale conosco no WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    </svg>
+</a>
+</body></html>
